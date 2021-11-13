@@ -42,7 +42,7 @@ function getExchangeRate() {
     amount.value = "1";
     amountVal = 1;
   }
-  let url = `https://v6.exchangerate-api.com/v6/293e767a2c0f56f0ff488f84/latest/${fromCurrency.value}`;
+  let url = `https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/${fromCurrency.value}`;
   fetch(url)
     .then((res) => res.json())
     .then((result) => {
